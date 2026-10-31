@@ -1,0 +1,422 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  --primary: #00ffff;
+  --glow-color: rgb(245, 245, 245);
+}
+
+body {
+  background-image: url(background.jpg);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border-bottom: 1px white solid;
+  display: flex;
+  align-items: center;
+
+  line-height: 1.6;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav .konten1 {
+  margin-left: 0;
+  color: white;
+  /* flex: 1; */
+}
+
+nav .konten2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+
+nav .konten2 li {
+  list-style-type: none;
+}
+
+nav .konten2 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .konten3 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+nav .konten3 a {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+}
+
+nav .konten3 .menu-hamberger {
+  display: none;
+}
+
+nav .konten2 :hover {
+  color: var(--primary);
+}
+nav .konten3 :hover {
+  color: var(--primary);
+}
+
+.container-section {
+  background-color: transparent;
+  border: 1px white solid;
+  padding: 20px;
+  margin: 6rem;
+  position: relative;
+  top: 20px;
+}
+
+.clidern-container-section {
+  /* background-color: brown; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 20px 0;
+}
+
+.hero-section {
+  /* background-color: aqua; */
+  flex: 1;
+}
+
+section div h1 {
+  color: white;
+  font-size: 40px;
+  transition: text-shadow;
+}
+.hero-section h1:hover {
+  text-shadow: 0 0 15px var(--glow-color);
+}
+
+.hero-section h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 16px;
+  transition: text-shadow 0.3s ease;
+}
+
+.hero-section h2:hover {
+  text-shadow: 0 0 10px var(--glow-color);
+}
+
+.hero-section p {
+  color: grey;
+  margin-bottom: 32px;
+  transition: color 0.3s ease;
+  max-width: 500px;
+}
+
+.hero-section p:hover {
+  color: white;
+}
+
+.div-btn {
+  /* background-color: #00cccc; */
+  display: flex;
+}
+
+.btn {
+  border: none;
+  width: 6.5rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--glow-color);
+  box-shadow: 0 0 20px var(--glow-color);
+  transform: scale(1.05);
+}
+
+.foto-images {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  flex-shrink: 0;
+}
+
+.foto-bulet {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.foto-bulet img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.foto-bulet:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 30px var(--glow-color);
+  transform: scale(1.05);
+}
+
+.foto-bulet img:hover {
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+#about-section {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+  padding: 20px;
+}
+
+.container-border {
+  /* background-color: tomato; */
+  border: 1px white solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  width: 85%;
+}
+
+.container-border .headingAbout h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.container-border .kontenIsi {
+  position: relative;
+  bottom: 25px;
+}
+
+.container-border .kontenIsi h2 {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container-border .kontenIsi h5 {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.card-box {
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  position: relative;
+  bottom: 50px;
+}
+
+.card {
+  /* background-color: #00cccc; */
+  border: 1px white solid;
+  border-radius: 10px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.card-icon {
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.card-text {
+  color: white;
+  text-align: center;
+}
+
+/* Responsive Styles - Perbaikan */
+@media (max-width: 1200px) {
+  .container-section {
+    margin: 4rem;
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-section {
+    margin: 3rem;
+  }
+
+  .foto-images {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  nav .konten1 h1 {
+    font-size: 1.5rem;
+  }
+
+  nav .konten2 {
+    display: none;
+  }
+
+  nav .konten3 {
+    gap: 1rem;
+  }
+
+  nav .konten3 .menu-hamberger {
+    display: block;
+  }
+
+  .clidern-container-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .foto-images {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section {
+    text-align: center;
+    order: 2;
+  }
+
+  .hero-section p {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .div-btn {
+    justify-content: center;
+  }
+
+  .container-border {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-section {
+    margin: 2rem 1rem;
+  }
+
+  .foto-images {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-section h2 {
+    font-size: 24px;
+  }
+
+  .container-border .headingAbout h1 {
+    font-size: 26px;
+  }
+}
+
+/* Hapus media query yang tidak perlu dan sesuaikan yang ada */
+
+.floating-text {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  color: white;
+}
+
+.visible {
+  color: white;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Untuk perangkat sangat kecil */
+@media (max-width: 320px) {
+  .hero-section h1 {
+    font-size: 22px;
+  }
+
+  .foto-images {
+    width: 240px;
+    height: 240px;
+  }
+
+  .container-border .headingAbout h1 {
+    font-size: 24px;
+  }
+}
